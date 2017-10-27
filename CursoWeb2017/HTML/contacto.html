@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Contactos</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Esta página es muy cutre y con contactos">
+    <meta name="keywords" content="html, inicio">
+    <link rel="stylesheet" type="text/css" href="../CSS/estilosPrimerEjemplo.css">
+    <link rel="icon" href="CursoWeb2017/Imagenes/simbolos.png" type="image/png">
+    <script src="CargarDatos.js"></script>
+</head>
+
+<body onload="myFunction()">
+    <h1>Contactos</h1>
+    <a href="../../index.html">Volver atrás</a>
+    <form name="formulario" method="post" action="https://matt94.000webhostapp.com/procesar1_post.php">
+        <fieldset>
+            <legend>CONTACTA CON MATT</legend>
+            <label for="nombreID">Nombre:</label><br/>
+            <input type="text" id="nombreID" name="nombre" placeholder="Escribe tu nombre..." minlength="5" maxlength="200" /><br/>
+            <label for="apellidosID">Apellidos:</label><br/>
+            <input type="text" id="apellidosID" name="apellidos" placeholder="Escribe tus apellidos..." />
+            <br/> <label for="edad">Edad:</label><br/>
+            <input id="edad" name="edad" type="number" min="14" max="200" /><br/>
+            <label for="fecha">Introduce tu fecha de nacimiento:</label>
+            <input placeholder="DD/MM/AAAA" type="text" name="fecha" onkeyup="mascara(this,'/',patron,true)" maxlength="10" /> <br/>
+            <fieldset id="generoSel">
+                <legend>Género: </legend>
+                <input type="radio" name="Genero" value "hombre">Hombre</input><br/>
+                <input type="radio" name="Genero" value "mujer">Mujer</input><br/>
+                <input type="radio" name="Genero" value "otros">Otros</input>
+            </fieldset>
+            <br/>
+            <p>Seleccione su ciudad Andaluza:</p>
+            <select>
+                <option value="Malaga">Cádiz</option>
+                <option value="Cadiz">Córdoba</option>
+                <option value="Granada">Granada</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Jaen">Jaen</option>
+                <option value="Malaga">Malaga</option>
+                <option value="Sevilla">Sevilla</option>
+            </select><br/><br/>
+            <fieldset id="interesesSel">
+                <legend>Intereses:</legend>
+                <input type="checkbox" value="sports">Deportes</input><br/>
+                <input type="checkbox" value="cine">Cine</input><br/>
+                <input type="checkbox" value="literatura" name="HHH">Literatura</input>
+            </fieldset>
+            <br/>Asunto:<br/>
+            <textarea id="AsuntoID" name="asunto" minlength="5" maxlength="200"></textarea>
+            <br/>
+            <button type="submit" class="button">ENVIAR</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

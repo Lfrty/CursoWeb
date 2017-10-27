@@ -1,0 +1,100 @@
+#textosHtml {
+    background-color: cornflowerblue;
+}
+
+#tablasHtml {
+    background-color: bisque;
+    margin-left: 20px;
+}
+
+#generoSel {
+    width: 100px;
+}
+
+#interesesSel {
+    width: 140px;
+}
+
+caption {
+    margin-bottom: 15px;
+}
+
+header {
+    margin-top: 5px;
+    margin: 30px;
+    border: 1px solid greenyellow;
+    font: italic bold 27px Monospace;
+    text-align: center;
+    outline: 2px dashed red;
+    outline-offset: 15px;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #4CAF50;
+    border-left: 1px solid #4CAF50;
+}
+
+tr:hover {
+    background-color: lightsteelblue;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-indent: 15px;
+    background-color: darkkhaki;
+    overflow: hidden;
+    /* Se le indica que la barra de desplazamiento estar'a oculta */
+    padding: 20px;
+    padding-top: 20px;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 35px 35px 35px;
+    -webkit-border-radius: 35px 35px 35px 35px;
+    border: 2px solid #5878ca;
+    /* Mete una tabulacion en la primera linea */
+}
+
+input[type="text"] {
+    height: 25px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    width: 300px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 35px 35px 35px;
+    -webkit-border-radius: 35px 35px 35px 35px;
+}
+
+footer {
+    text-align: right;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Contactos</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Esta página es muy cutre y con contactos">
+    <meta name="keywords" content="html, inicio">
+    <link rel="stylesheet" type="text/css" href="../CSS/estilosPrimerEjemplo.css">
+    <link rel="icon" href="CursoWeb2017/Imagenes/simbolos.png" type="image/png">
+    <script src="CargarDatos.js"></script>
+</head>
+
+<body onload="myFunction()">
+    <h1>Contactos</h1>
+    <a href="../../index.html">Volver atrás</a>
+    <form name="formulario" method="post" action="https://matt94.000webhostapp.com/procesar1_post.php">
+        <fieldset>
+            <legend>CONTACTA CON MATT</legend>
+            <label for="nombreID">Nombre:</label><br/>
+            <input type="text" id="nombreID" name="nombre" placeholder="Escribe tu nombre..." minlength="5" maxlength="200" /><br/>
+            <label for="contrasenyaID">Contraseña:</label><br/>
+            <input type="password" id="contrasenyaID" name="contrasenya" />
+            <button type="submit" class="button">ENVIAR</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

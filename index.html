@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Mi primer html</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Esta página es muy cutre">
+    <meta name="keywords" content="html, inicio">
+    <!-- <link rel="stylesheet" type="text/css" href="../CSS/estilosPrimerEjemplo.css">-->
+    <link rel="icon" href="CursoWeb2017/Imagenes/iconoM.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <h1>Aquí va el título</h1>
+        <h2>Y aquí el titular definido de la noticia</h2>
+    </header>
+    <nav>
+        <a href="CursoWeb2017/HTML/fotos.html" target="_blank" title="Imágenes y Fotos">Fotos</a> | <a href="CursoWeb2017/HTML/login.html" target="_blank" title="Logeate!">Login</a> | <a href="CursoWeb2017/HTML/textos.html" target="_blank">Textos</a>        | <a href="CursoWeb2017/HTML/contacto.html" target="_blank">Contacto</a> | <a href="CursoWeb2017/HTML/ListasYTablas.html" target="_blank" title="Imágenes y Fotos">Listas</a>
+    </nav>
+    <main>
+        <section>
+            <article>
+                La muerte es una quimera: porque mientras yo existo, no existe la <i>muerte</i>; y cuando existe la muerte <strong>ya no existo yo</strong>.
+                <br/><cite>Epicuro de Samos</cite>
+                <h2>Kafka</h2>
+                <p>My favourite book is <span translate="no"> Two Roads</span></p>
+                <p>Una mañana, tras un sueño intranquilo, Gregorio Samsa se despertó convertido en un monstruoso insecto. Estaba echado de espaldas sobre un duro caparazón y, al alzar la cabeza, vio su vientre convexo y oscuro, surcado por curvadas callosidades,
+                    sobre el que casi no se aguantaba la colcha, que estaba a punto de escurrirse hasta el suelo. Numerosas patas, penosamente delgadas en comparación con el grosor normal de sus piernas, se agitaban sin concierto. - ¿Qué me ha ocurrido?
+                    No estaba soñando. Su habitación, una habitación normal, aunque muy pequeña, tenía el aspecto habitual. Sobre la mesa había desparramado un muestrario de paños - Samsa era viajante de comercio-, y de la pared colgaba una estampa recientemente
+                    recortada de una revista ilustrada y puesta en un marco dorado. La estampa mostraba a una mujer tocada con un gorro de pieles, envuelta en una estola también de pieles, y que, muy erguida, esgrimía un amplio manguito, asimismo de piel,
+                    que ocultaba todo su antebrazo. Gregorio miró hacia la ventana; estaba nublado, y sobre el cinc del alféizar repiqueteaban las gotas de lluvia, lo que le hizo sentir una gran melancolía. «Bueno -pensó-; ¿y si siguiese durmiendo un
+                    rato y me olvidase de todas estas locuras?» Pero no era posible, pues Gregorio tenía la costumbre de dormir sobre el lado derecho, y su actual estado no le permitía adoptar tal postura. Por más que se esforzara volvía a quedar de espaldas.
+                    Intentó en vano esta operación numerosas veces; cerró los ojos para no tener que ver aquella confusa agitación de patas, que no cesó hasta que notó en el costado un dolor leve y punzante, un dolor jamás sentido hasta entonces. - ¡Qué
+                    cansada es la profesión que he elegido! -se dijo-. Siempre de viaje. Las preocupaciones son mucho mayores cuando se trabaja fuera, por no hablar de las molestias propias de los viajes: estar pendiente de los enlaces de los trenes;
+                    la comida mala, irregular; relaciones que cambian constantemente, que nunca llegan a ser verdaderamente cordiales, y en las que no tienen cabida los sentimientos. ¡Al diablo con todo! Sintió en el vientre una ligera picazón. Lentamente,
+                    se estiró sobre la espalda en dirección a la cabecera de la cama, para poder alzar mejor la cabeza. Vio que el sitio que le picaba estaba cubierto de extraños untitos blancos. Intentó rascarse con una pata; pero tuvo que retirarla
+                    inmediatamente, pues el roce</p>
+
+                <time datetime="2017-10-23" pubdate>Publicado el 23-10-2017 </time>
+            </article>
+            <h2>Ejemplo de substring en C#</h2>
+            <article>
+                <pre>
+                    <code>
+                        using System;
+                        
+                        public class SubStringTest {
+                            public static void Main() {
+                                string [] info = { "Name: Felica Walker", "Title: Mz.", 
+                                                   "Age: 47", "Location: Paris", "Gender: F"};
+                                int found = 0;
+                        
+                                Console.WriteLine("The initial values in the array are:");
+                                foreach (string s in info)
+                                    Console.WriteLine(s);
+                        
+                                Console.WriteLine("\nWe want to retrieve only the key information. That is:");        
+                                foreach (string s in info) {
+                                    found = s.IndexOf(": ");
+                                    Console.WriteLine("   {0}", s.Substring(found + 2));
+                                }
+                            }
+                        }
+                        // We want to retrieve only the key information. That is:
+                        //          Felica Walker
+                        //          Mz.
+                        //          47
+                        //          Paris
+                        //          F
+                    </code>
+                </pre>
+            </article>
+            <article>
+                <a href="CursoWeb2017/Imagenes/cssMola.jpg" download>DESCARGAR Imagen</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <address>Carretera Cadiz, Málaga</address>
+        <small>Todos los derechos reservados &copy; 2017</small>
+    </footer>
+</body>
+
+</html>
